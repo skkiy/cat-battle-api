@@ -1,7 +1,7 @@
 class Cat < ApplicationRecord
   belongs_to :board
   has_one :square
-  has_many :game_action
+  has_many :game_actions
 
   KINDS = [
     :mike,
@@ -13,6 +13,4 @@ class Cat < ApplicationRecord
   ]
   enum :kind, KINDS
   enum :player, [:home, :away]
-
-
 end
