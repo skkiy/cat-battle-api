@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_07_02_195437) do
+ActiveRecord::Schema[7.0].define(version: 2022_07_02_195438) do
   create_table "boards", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.bigint "game_id"
     t.datetime "created_at", null: false
@@ -48,6 +48,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_07_02_195437) do
     t.integer "result"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "status"
     t.index ["away_user_id"], name: "fk_rails_7d07b11fb1"
     t.index ["home_user_id"], name: "fk_rails_70b27cce3f"
   end

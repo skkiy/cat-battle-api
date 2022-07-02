@@ -4,4 +4,5 @@ class Game < ApplicationRecord
   has_one :board
   enum :first_player, [:home_first, :away_first]
   enum :result, [:home_win, :away_win]
+  enum :status, [:waiting, :ongoing, :finished]
 end
